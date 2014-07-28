@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/item_node_content_list_text_content"
+        android:textColor="@color/main_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/default_node_name_text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/item_node_content_list_image_content"
+        android:contentDescription="@string/node_list_icon_description"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_alignBottom="@+id/item_node_content_list_text_content"
+        android:layout_marginLeft="38dp"
+        android:layout_toRightOf="@+id/item_node_content_list_text_content"
+        android:src="@drawable/ic_launcher" />
+
+    <Button
+        android:id="@+id/item_node_content_list_button_content"
+        android:focusable="false"
+        android:textColor="@color/main_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/item_node_content_list_image_content"
+        android:text="@string/default_node_button_text" />
+    
+    <Button
+        android:id="@+id/item_node_content_list_deleteButton"
+        android:focusable="false"
+        android:textColor="@color/main_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/delete_content_element_text" />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:id="@+id/separator"
+        android:visibility="visible"
+        android:background="@android:color/darker_gray"/>
+
+</RelativeLayout>

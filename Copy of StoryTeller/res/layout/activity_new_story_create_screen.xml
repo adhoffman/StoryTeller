@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    
+    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="left"
+    tools:context=".MainActivity" 
+    android:background="@color/main_background_color">
+
+    
+    <TextView
+        android:id="@+id/main_title_text"
+        android:textColor="@color/main_text_color"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="177dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/main_text_story_create_screen"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <EditText
+        android:id="@+id/story_input_field"
+        android:textColor="@color/main_text_color"
+        android:inputType="textCapSentences"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/main_title_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+    
+
+    <Button
+        android:id="@+id/create_story_button"
+        android:textColor="@color/main_text_color"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/story_input_field"
+        android:layout_centerHorizontal="true"
+        android:text="@string/create_story_button_text" />
+    
+    
+    <Button
+        android:id="@+id/cancel_story_creation_button"
+        android:textColor="@color/main_text_color"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/create_story_button"
+        android:layout_centerHorizontal="true"
+        android:text="@string/cancel_story_button_text" />
+
+    
+
+</RelativeLayout>

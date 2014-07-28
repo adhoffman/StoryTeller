@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp" >
+
+       
+    
+    <TextView
+        android:id="@+id/item_node_list_view_text"
+        android:textColor="@color/main_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/default_node_name_text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+     
+     <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:id="@+id/separator"
+        android:visibility="visible"
+        android:background="@android:color/darker_gray"/>
+
+     
+</RelativeLayout>

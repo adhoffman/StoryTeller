@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_background_color"
+    android:gravity="left"
+    tools:context=".MainActivity" >
+    
+    
+    <TextView
+        android:id="@+id/name_of_selected_node"
+        android:textColor="@color/main_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/new_story_title_textview"
+        android:layout_marginLeft="70dp"
+        android:layout_toRightOf="@+id/new_story_title_textview"
+        android:text="@string/default_selected_node_name_text"
+        android:textSize="35sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/new_story_node_button"
+        android:textColor="@color/main_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/new_story_title_textview"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/add_story_node_button_text" />
+    
+
+    <Button
+        android:id="@+id/add_text_to_story_node_botton"
+        android:textColor="@color/main_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/new_story_node_button"
+        android:layout_marginRight="37dp"
+        android:text="@string/add_text_to_story_node_button_text" />
+
+
+    <Button
+        android:id="@+id/add_picture_to_story_node_botton"
+        android:textColor="@color/main_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_text_to_story_node_botton"
+        android:layout_below="@+id/add_text_to_story_node_botton"
+        android:layout_marginTop="35dp"
+        android:text="@string/add_picture_to_story_node_button_text" />
+
+    <Button
+        android:id="@+id/add_button_to_story_node_button"
+        android:textColor="@color/main_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_picture_to_story_node_botton"
+        android:layout_below="@+id/add_picture_to_story_node_botton"
+        android:layout_marginTop="34dp"
+        android:text="@string/add_button_to_story_node_button_text" />
+
+    <ListView
+        android:id="@+id/node_list_view"
+        android:textColor="@color/main_text_color"
+        android:background="@drawable/borderlines"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/new_story_node_button"
+        android:layout_below="@+id/new_story_node_button"
+        android:layout_marginLeft="10dp" >
+
+    </ListView>
+
+    <ListView
+        android:id="@+id/node_content_list_view"
+        android:textColor="@color/main_text_color"
+        android:background="@drawable/borderlines"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/node_list_view"
+        android:layout_toLeftOf="@+id/add_text_to_story_node_botton"
+        android:layout_toRightOf="@+id/node_list_view" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/new_story_title_textview"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/new_story_node_button"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/new_story_title_text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/main_text_color"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/save_story_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/back_to_main_menu_button"
+        android:layout_alignLeft="@+id/add_button_to_story_node_button"
+        android:layout_marginBottom="20dp"
+        android:text="@string/save_story_button_text"
+        android:textColor="@color/main_text_color" />
+
+    <Button
+        android:id="@+id/back_to_main_menu_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_text_color"
+        android:layout_alignLeft="@+id/save_story_button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="17dp"
+        android:text="@string/back_to_main_menu_button_text" />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    
+    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="left"
+    tools:context=".MainActivity" 
+    android:background="@color/main_background_color">
+    
+
+    <TextView
+        android:id="@+id/game_title_screen_main_textfield"
+        android:textColor="@color/main_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:textSize="50sp"
+        android:text="@string/main_screen_game_title_text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    
+    <Button
+        android:id="@+id/new_story_button"
+        android:layout_width="fill_parent"
+        android:textColor="@color/main_text_color"
+        android:layout_height="100dp"
+        android:layout_below="@+id/game_title_screen_main_textfield"
+        android:text="@string/new_story_button_text"/>
+        
+    <Button
+        android:id="@+id/load_story_button"
+        android:layout_width="fill_parent"
+        android:textColor="@color/main_text_color"
+        android:layout_height="100dp"
+        android:layout_below="@+id/new_story_button"
+        android:text="@string/load_story_button_text"/>
+
+    
+
+</RelativeLayout>
